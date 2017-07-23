@@ -2,10 +2,6 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 Laravel5+ bindings for the excellent email service sendwithus.  Wraps https://github.com/sendwithus/sendwithus_php with a facade and client manager.
 
@@ -37,11 +33,13 @@ $ php artisan vendor:publish
 Next, update your .env files with your sendwithus API keys.  
 
 SENDWITHUS_API_KEY_PRODUCTION=..................
+
 SENDWITHUS_API_KEY_TESTING=....................
 
 Other environment variables you can set:
 
 SENDWITHUS_API_DEFAULT_KEY (production|testing)  Default: production
+
 SENDWITHUS_DEBUG (true|false)   Default: false;
 
 ## Usage
