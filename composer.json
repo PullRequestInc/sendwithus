@@ -19,7 +19,7 @@
     ],
     "require": {
         "illuminate/support": "~5.0",
-        "sendwithus/api": "dev-master",
+        "sendwithus/api": "^4.0.0",
         "php": "~7.0"
     },
     "require-dev": {
