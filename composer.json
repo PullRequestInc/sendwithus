@@ -4,7 +4,8 @@
     "description": "Laravel (5+) bindings for the excellent sendwithus email service",
     "keywords": [
         "PullRequest",
-        "sendwithus"
+        "sendwithus",
+        "laravel"
     ],
     "homepage": "https://github.com/PullRequest/sendwithus",
     "license": "MIT",
