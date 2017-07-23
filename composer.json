@@ -1,5 +1,5 @@
 {
-    "name": "PullRequestInc/sendwithus",
+    "name": "pullrequestinc/sendwithus",
     "type": "library",
     "description": "Laravel (5+) bindings for the excellent sendwithus email service",
     "keywords": [
