@@ -2,7 +2,6 @@
 
 namespace PullRequestInc\sendwithus;
 
-
 use sendwithus\API;
 
 class Client
@@ -15,7 +14,6 @@ class Client
      * Client constructor.
      * @param array $options Sendwith us configuration array
      */
-
     public function __construct($options = [])
     {
         $this->options = $options;
@@ -30,7 +28,6 @@ class Client
      * @param $arguments
      * @return mixed
      */
-
     public function __call($name, $arguments)
     {
         return call_user_func_array(array($this->api, $name), $arguments);
@@ -41,7 +38,6 @@ class Client
      *
      * @return API
      */
-
     public function getClient()
     {
         return $this->api = new API($this->options['api_key_' . $this->mode], $this->options['options']);
@@ -52,7 +48,6 @@ class Client
      *
      * @return API
      */
-
     public function testing()
     {
         $this->setMode('testing');
@@ -64,12 +59,10 @@ class Client
      *
      * @return API
      */
-
     public function production()
     {
         $this->setMode('production');
         return $this->getClient();
-
     }
 
     /**
@@ -78,7 +71,6 @@ class Client
      * @param $mode
      * @return bool
      */
-
     public function setMode($mode)
     {
         if ($mode === 'production' || $mode === 'testing') {
@@ -94,10 +86,8 @@ class Client
      *
      * @return mixed
      */
-
     public function getMode()
     {
         return $this->mode;
     }
-
 }

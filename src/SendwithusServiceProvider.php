@@ -6,7 +6,6 @@ use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 
-
 class SendwithusServiceProvider extends ServiceProvider
 {
     /**
@@ -26,20 +25,16 @@ class SendwithusServiceProvider extends ServiceProvider
      *
      * return void
      */
-
     public function setupConfig(Container $app)
     {
-
         $source = realpath($raw = __DIR__ . '/../config/sendwithus.php') ?: $raw;
 
         if ($app instanceof LaravelApplication && $app->runningInConsole()) {
             $this->publishes([$source => config_path('sendwithus.php')]);
         }
+
         $this->mergeConfigFrom($source, 'sendwithus');
-
-
     }
-
 
     /**
      * Register any package services.
@@ -48,11 +43,9 @@ class SendwithusServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         $this->app->singleton('sendwithus', function (Container $app) {
             $config = $app->config->get('sendwithus');
             return new Client($config);
         });
-
     }
 }
