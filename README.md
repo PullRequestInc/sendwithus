@@ -65,14 +65,6 @@ $ phpunit
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
 
-## Security
-
-If you discover any security related issues, please email lyal@pullrequest.com instead of using the issue tracker.
-
-## Credits
-
-- [Lyal Avery][link-author]
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
@@ -89,5 +81,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-scrutinizer]: https://scrutinizer-ci.com/g/PullRequestInc/sendwithus/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/PullRequestInc/sendwithus
 [link-downloads]: https://packagist.org/packages/PullRequestInc/sendwithus
-[link-author]: https://github.com/lyal
 [link-contributors]: ../../contributors
